@@ -10,7 +10,8 @@ unzip -oq ngx_cache_purge.zip
 rm -rf ngx_cache_purge.zip
 unzip -oq headers-more-nginx-module.zip
 rm -f headers-more-nginx-module.zip
-tar -xzvf openssl*.tar.gz
+tar -xzvf openssl-1.1.1-pre4.tar.gz
+tar -xzvf openssl-1.0.2l.tar.gz
 rm -rf openssl*.tar.gz
 tar -xzvf zlib*.tar.gz
 rm -rf zlib*.tar.gz
@@ -36,8 +37,11 @@ tar -xzvf nginx_module_vts.tar.gz
 rm -rf nginx_module_vts.tar.gz
 unzip ngx_http_dyups_module-master.zip
 rm -rf ngx_http_dyups_module-master.zip
-tar -xzvf nginx-*.tar.gz
-rm -f nginx-*.tar.gz
+tar -xzvf nginx-1.12.2.tar.gz
+tar -xzvf nginx-1.13.11.tar.gz
+rm -f nginx-1.*.tar.gz
 unzip -oq initscript-nginx.zip
 rm -f initscript-nginx.zip
 unzip -oq nginx-limit-upstream-master.zip
+rm -f nginx-limit-upstream-master.zip
+
