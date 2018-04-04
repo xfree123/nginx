@@ -1,3 +1,4 @@
+#!/bin/bash
 opensslversion=openssl-1.0.2l
 zlibversion=zlib-1.2.11
 Nginx_VERSION=1.12.2
