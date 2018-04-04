@@ -55,3 +55,5 @@ cd /tmp/nginx/nginx-${nginx_VERSION}
 --add-dynamic-module=../memc-nginx-module-master \
 --add-dynamic-module=../ngx_http_dyups_module-master \
 --with-cc=/opt/rh/devtoolset-2/root/usr/bin/gcc
+make
+make install
