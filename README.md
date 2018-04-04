@@ -1,2 +1,2 @@
-# nginx-1.12.2
+# nginx SERVER for productions
 New Build Server
