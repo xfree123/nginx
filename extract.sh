@@ -1,8 +1,5 @@
 #!/bin/bash
-opensslversion=openssl-1.0.2l
-zlibversion=zlib-1.2.11
-Nginx_VERSION=1.12.2
-moduledir=../
+
 echo "=========================This will extract all file=================================="
 cd /usr/local/src/nginx/
 unzip -oq echo-nginx-module.zip
@@ -13,10 +10,10 @@ unzip -oq ngx_cache_purge.zip
 rm -rf ngx_cache_purge.zip
 unzip -oq headers-more-nginx-module.zip
 rm -f headers-more-nginx-module.zip
-tar -xzvf ${opensslversion}.tar.gz
-rm -rf ${opensslversion}.tar.gz
-tar -xzvf ${zlibversion}.tar.gz
-rm -rf ${zlibversion}.tar.gz
+tar -xzvf openssl*.tar.gz
+rm -rf openssl*.tar.gz
+tar -xzvf zlib*.tar.gz
+rm -rf zlib*.tar.gz
 unzip -oq pcre-8.41.zip
 rm -rf pcre-8.41.zip
 tar -xzvf ngx_http_redis-0.3.8.tar.gz
@@ -39,7 +36,8 @@ tar -xzvf nginx_module_vts.tar.gz
 rm -rf nginx_module_vts.tar.gz
 unzip ngx_http_dyups_module-master.zip
 rm -rf ngx_http_dyups_module-master.zip
-tar -xzvf nginx-${Nginx_VERSION}.tar.gz
-rm -f nginx-${Nginx_VERSION}.tar.gz
+tar -xzvf nginx-*.tar.gz
+rm -f nginx-*.tar.gz
 unzip -oq initscript-nginx.zip
 rm -f initscript-nginx.zip
+unzip -oq nginx-limit-upstream-master.zip
