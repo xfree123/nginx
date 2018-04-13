@@ -9,8 +9,8 @@ cd /tmp/nginx/nginx-${nginx_VERSION}
 --group=nginx --user=nginx \
 --pid-path=/var/run/nginx.pid \
 --conf-path=/etc/nginx/nginx.conf \
---http-log-path=/var/log/nginx \
---error-log-path=/var/log/nginx \
+--http-log-path=/var/log/nginx/access.log \
+--error-log-path=/var/log/nginx/error.log \
 --with-http_v2_module \
 --with-http_ssl_module \
 --with-ipv6 \
